@@ -1,0 +1,29 @@
+<div class="container">
+  <div class="card-trip my-3">
+    <%= image_tag @cocktail.imgurl, alt: "cocktail_img_didn't load" %>
+  <div class="card-trip-infos">
+    <div>
+      <h3><%= @cocktail.name %></h3>
+      <p><%= @cocktail.description %></p>
+      <h2 class="my-3">Ingredients:</h2>
+      <div class="dose-container">
+        <div class="dose-list">
+          <% @cocktail.doses.each do |dose| %>
+            <p> <%= dose.description %> <%= dose.ingredient.name %> <%= link_to 'Delete', dose_path(dose), method: :delete %></p>
+          <% end %>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<%= link_to 'add dose', new_cocktail_dose_path(@cocktail) %>
+        <div class="dose-form-container">
+          <%#= simple_form_for(@cocktail) do |c| %>
+            <%= simple_form_for([@cocktail, @dose]) do |f| %>
+              <%= f.input :description %>
+              <%= f.association :ingredient %>
+              <%= f.submit 'submit' %>
+            <% end %>
+          <%# end %>
+</div>

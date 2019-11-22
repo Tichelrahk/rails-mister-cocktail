@@ -1,0 +1,16 @@
+<div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
+      <div class="nav-item dropdown">
+        <%= image_tag "logo.png", class: "navbar-logo dropdown-toggle", id: "navbarDropdown", data: { toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
+        <div class="dropdown-menu dropdown-menu-left" aria-labelledby="navbarDropdown">
+          <%= link_to "Home", cocktails_path, class: "dropdown-item" %>
+          <%= link_to "Create a cocktail", new_cocktail_path, class: "dropdown-item" %>
+        </div>
+      </div>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+      </li>
+    </ul>
+  </div>
+</div>

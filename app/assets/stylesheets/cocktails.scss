@@ -1,0 +1,11 @@
+// Place all the styles related to the cocktails controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.grid-container {
+  grid-gap: 16px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
