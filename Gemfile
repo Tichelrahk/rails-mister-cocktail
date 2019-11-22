@@ -62,3 +62,5 @@ gem 'autoprefixer-rails'
 gem 'font-awesome-sass', '~> 5.6.1'
 gem 'simple_form'
 gem 'faker', :git => 'https://github.com/faker-ruby/faker.git', :branch => 'master'
+
+gem 'dotenv-rails', groups: [:development, :test]
