@@ -5,6 +5,15 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+Cocktail.destroy_all
+
+# i = 1
+# 10.times do
+#   Cocktail.create(name: Faker::Games::Pokemon.name, description: 'Lorem ipsum', imgurl: "https://source.unsplash.com/collection/962396/1200x500/?sig=#{i}")
+#   i+=1
+# end
+
+puts "created #{Cocktail.all.length}"
 
 Ingredient.destroy_all
 
@@ -16,12 +25,3 @@ end
 
 puts "created #{Ingredient.all.length}"
 
-Cocktail.destroy_all
-
-# i = 1
-# 10.times do
-#   Cocktail.create(name: Faker::Games::Pokemon.name, description: 'Lorem ipsum', imgurl: "https://source.unsplash.com/collection/962396/1200x500/?sig=#{i}")
-#   i+=1
-# end
-
-puts "created #{Cocktail.all.length}"
